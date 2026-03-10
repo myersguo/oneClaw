@@ -1,0 +1,74 @@
+# Dependencies
+node_modules/
+# pnpm-lock.yaml is committed to ensure consistent installs
+
+# Build outputs
+dist/
+out/
+build/
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+backend/data/
+data/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+
+# Project specific
+workspace/
+backend/openclaw.json
+backend/openclaw.json.bak
+backend/nodemon.json
+backend/test-glob.js
+TODO.txt
+*.bak
+
+# Build outputs
+dist/
+out/
+build/
+desktop/dist-backend/
+desktop/dist-frontend/
+desktop/dist-electron/
+
+# TypeScript compiled output in src directories (should only be in dist/)
+backend/src/**/*.js
+backend/src/**/*.js.map
+desktop/src/**/*.js
+desktop/src/**/*.js.map
+frontend/src/**/*.js
+frontend/src/**/*.js.map
+
+# Node version management
+.node-version
+.nvmrc
+
+# Package manager lock files (project uses pnpm)
+backend/package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+tmp/
+temp/

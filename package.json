@@ -1,0 +1,32 @@
+{
+  "name": "oneclaw-manager",
+  "version": "1.0.0",
+  "description": "Desktop management tool for OpenClaw AI Assistant",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:web": "pnpm --filter backend --filter frontend --parallel run dev",
+    "dev:desktop": "pnpm --filter desktop dev",
+    "build": "pnpm -r run build",
+    "build:binary": "./scripts/build-desktop.sh",
+    "lint": "pnpm -r run lint",
+    "start": "node backend/dist/index.js"
+  },
+  "keywords": [
+    "openclaw",
+    "ai",
+    "manager",
+    "electron",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+appId: com.oneclaw.desktop
+productName: OneClaw
+directories:
+  output: dist-electron
+  buildResources: build
+files:
+  - dist/**/*
+  - node_modules/**/*
+  - package.json
+  - from: dist-frontend
+    to: frontend/dist
+  - from: dist-backend
+    to: dist-backend
+    filter: ["**/*"]
+asarUnpack:
+  - "dist-backend/**/*"
+  - "node_modules/**/*"
+extends: null
+win:
+  target: nsis
+mac:
+  target: dmg
+  entitlements: entitlements.mac.plist
+  entitlementsInherit: entitlements.mac.plist
+  identity: null
+linux:
+  target: AppImage

@@ -1,0 +1,17 @@
+{
+  "id": "hourly-google-search",
+  "name": "Hourly Google Search",
+  "description": "Open browser and search Google every hour",
+  "schedule": "0 * * * *",
+  "enabled": true,
+  "actions": [
+    {
+      "type": "browser",
+      "config": {
+        "url": "https://www.google.com",
+        "action": "navigate"
+      }
+    }
+  ],
+  "notify": false
+}

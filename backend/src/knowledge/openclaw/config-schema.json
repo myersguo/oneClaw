@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "gateway": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "integer",
+          "default": 18789
+        },
+        "host": {
+          "type": "string",
+          "default": "localhost"
+        }
+      },
+      "required": ["port"]
+    },
+    "llm": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": ["openai", "anthropic", "local"]
+        },
+        "model": {
+          "type": "string"
+        },
+        "apiKey": {
+          "type": "string"
+        }
+      },
+      "required": ["provider"]
+    },
+    "channels": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "credentials": {
+            "type": "object"
+          }
+        },
+        "required": ["enabled"]
+      }
+    }
+  },
+  "required": ["gateway"]
+}

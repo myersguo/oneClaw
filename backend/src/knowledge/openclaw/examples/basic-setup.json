@@ -1,0 +1,18 @@
+{
+  "gateway": {
+    "port": 18789,
+    "host": "localhost"
+  },
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4-turbo"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": false
+    },
+    "telegram": {
+      "enabled": false
+    }
+  }
+}
