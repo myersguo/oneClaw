@@ -7,12 +7,13 @@
   "main": "dist/main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "concurrently -k \"pnpm --filter frontend dev\" \"wait-on http://localhost:5173 && tsc && NODE_ENV=development electron .\"",
+    "dev": "concurrently -k \"pnpm --filter frontend dev\" \"wait-on http://localhost:5175 && tsc && NODE_ENV=development electron .\"",
     "build": "tsc",
     "package": "electron-builder",
     "tsc": "tsc"
   },
   "devDependencies": {
+    "@electron/rebuild": "^4.0.3",
     "@types/node": "^24.10.1",
     "concurrently": "^8.2.2",
     "electron": "^33.4.11",
@@ -21,13 +22,13 @@
     "wait-on": "^7.2.0"
   },
   "dependencies": {
-    "better-sqlite3": "^12.6.2",
+    "better-sqlite3": "12.6.2",
     "bindings": "^1.5.0",
-    "file-uri-to-path": "1.0.0",
-    "prebuild-install": "^7.1.1",
     "debug": "^4.4.3",
     "electron-squirrel-startup": "^1.0.1",
+    "file-uri-to-path": "1.0.0",
     "get-port": "5.1.1",
-    "ms": "^2.1.3"
+    "ms": "^2.1.3",
+    "prebuild-install": "^7.1.1"
   }
 }

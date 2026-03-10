@@ -72,3 +72,4 @@ backend/package-lock.json
 # Temporary files
 tmp/
 temp/
+.gemini-clipboard/
