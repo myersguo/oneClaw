@@ -149,6 +149,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by the OneClaw Team**
 
-[⭐ Star us on GitHub](https://github.com/myersguo/oneClaw) | [🌐 Website](https://openclaw.ai) | [💬 Discord](https://discord.gg/openclaw)
+[⭐ Star us on GitHub](https://github.com/myersguo/oneClaw) |
 
 </div>
