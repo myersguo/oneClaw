@@ -73,3 +73,6 @@ backend/package-lock.json
 tmp/
 temp/
 .gemini-clipboard/
+
+# Ignore pnpm lock file
+pnpm-lock.yaml

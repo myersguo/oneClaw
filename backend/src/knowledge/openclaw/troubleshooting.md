@@ -8,9 +8,10 @@
 - Process exits immediately
 
 **Solutions:**
-1. Check if port is occupied: `lsof -i :18789`
-2. Kill existing process: `kill <PID>`
-3. Check Node.js version: `node -v` (Must be >= 22)
+1. Check gateway logs: `tail -n 50 /tmp/openclaw-gateway.log`
+2. Check if port is occupied: `lsof -i :18789`
+3. Kill existing process: `kill <PID>`
+4. Check Node.js version: `node -v` (Must be >= 22)
 
 ### Gateway not reachable
 **Symptoms:**
